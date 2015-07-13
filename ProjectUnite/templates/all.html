@@ -1,0 +1,6 @@
+  {% extends "base.html" %}
+  {% block content %}
+  {% for user in users %}
+  <li><a href = '/members/{{ user.username }}'>{{ user }}</a> {% for item in user.SignUp_set.all %}{{ item }}{% endfor %}</li>
+  {% endfor %}
+  {% endblock %}

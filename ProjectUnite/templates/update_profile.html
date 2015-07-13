@@ -1,0 +1,14 @@
+  {% extends "base.html" %}
+  {% load crispy_forms_tags %}
+
+  {% block content %}
+<form method='POST' action = '.'>{% csrf_token %}
+	{{ signup_form|crispy }}
+	<div class = 'row'>
+	{{ user_picture_form.as_p }}
+	</div>
+<input class = 'btn btn-primary' type='submit' value = 'UPDATE'/>
+</form>
+
+
+  {% endblock %}

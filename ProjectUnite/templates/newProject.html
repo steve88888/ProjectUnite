@@ -1,0 +1,13 @@
+ {% extends "base.html" %}
+ {% load crispy_forms_tags %}
+   {% block content %}
+ <h1> Create/Edit a new project</h1>
+
+<form method='POST' action = '.'>{% csrf_token %}
+	{{ form|crispy }}
+	
+<input class = 'btn btn-primary' type='submit' value = 'SUBMIT'/>
+</form>
+
+
+  {% endblock %}
