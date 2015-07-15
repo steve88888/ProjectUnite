@@ -1,4 +1,5 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,12 +12,17 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Project Unite</title>
-
+    <h1>Testing</h1>
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="{ static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="navbar-static-top.css" rel="stylesheet">
+    <link href="{% static 'css/navbar-static-top.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+   <link href=" {{ STATIC_ROOT }} " rel = "stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -49,14 +55,32 @@
     
     </div> <!-- /container -->
   </div>
-    <!-- Latest compiled and minified CSS -->
+     Latest compiled and minified CSS CDN
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<!-- Optional theme -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+   <style>
+    title {
+  
+  color: #d0e4fe;
+}
+
+  h1 {
+    color: orange;
+
+  }
+
+  body {
+    
+    color: red;
+  }
+
+   </style>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
